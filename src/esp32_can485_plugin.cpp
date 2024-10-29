@@ -28,6 +28,11 @@ namespace isobus
         CAN_cfg = *can_cfg;
     }
 
+     Esp32CAN485Plugin::Esp32CAN485Plugin()
+    {
+        CAN_cfg.speed = CAN_SPEED_250KBPS;
+    }
+
     Esp32CAN485Plugin::~Esp32CAN485Plugin()
     {
         close();

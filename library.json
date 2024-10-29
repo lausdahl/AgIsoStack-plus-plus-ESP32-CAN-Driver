@@ -1,0 +1,35 @@
+{
+  "name": "AgIsoStack-plus-plus-ESP32-CAN-Driver",
+  "version": "0.0.1",
+  "description": "Can bus driver for AgIsoStack-plus-plus that works with LilyGo T-CAN485",
+  "keywords": "ESP32 CAN CANBUS",
+  "repository":
+  {
+    "type": "git",
+    "url": "git@github.com:lausdahl/AgIsoStack-plus-plus-ESP32-CAN-Driver.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Kenneth Lausdahl",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lausdahl/AgIsoStack-plus-plus-ESP32-CAN-Driver",
+
+ "platforms": ["espressif32"],
+  "frameworks": ["espidf"],
+
+
+  "dependencies": [
+    {
+      "name": "ESP32CAN",
+      "url": "https://github.com/lausdahl/ESP32-Arduino-CAN.git"
+    },
+     {
+      "name": "AgIsoStack++",
+      "url": "https://github.com/Open-Agriculture/AgIsoStack-plus-plus.git "
+    }
+]
+}

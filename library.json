@@ -25,7 +25,7 @@
   "dependencies": [
     {
       "name": "ESP32CAN",
-      "url": "https://github.com/lausdahl/ESP32-Arduino-CAN.git"
+      "url": "https://github.com/lausdahl/ESP32-Arduino-CAN.git#20f9f7c"
     },
      {
       "name": "AgIsoStack++",

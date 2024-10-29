@@ -29,10 +29,8 @@ namespace isobus
 	{
 	public:
 		/// @brief Constructor for the socket CAN driver
-		/// @param[in] filterConfig A reference to the filter configuration for the TWAI driver
-		/// @param[in] timingConfig A reference to the timing configuration for the TWAI driver
-		/// @param[in] generalConfig A reference to the general configuration for the TWAI driver
 		explicit Esp32CAN485Plugin(const CAN_device_t *CAN_cfg);
+		explicit Esp32CAN485Plugin();
 
 		/// @brief The destructor for TWAIPlugin
 		virtual ~Esp32CAN485Plugin();

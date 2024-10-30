@@ -19,7 +19,7 @@
 #include <limits>
 #include "driver/gpio.h"
 CAN_device_t CAN_cfg;
-const int rx_queue_size = 1;
+const int rx_queue_size = 10;
 namespace isobus
 {
 
@@ -66,7 +66,7 @@ namespace isobus
         bool retVal = false;
         CAN_frame_t rx_frame;
 
-        if (xQueueReceive(CAN_cfg.rx_queue, &rx_frame, pdMS_TO_TICKS(10)) == pdTRUE)
+        if (xQueueReceive(CAN_cfg.rx_queue, &rx_frame, pdMS_TO_TICKS(100)) == pdTRUE)
         {
 
             if (!rx_frame.FIR.B.RTR)
